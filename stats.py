@@ -1,12 +1,7 @@
-def get_wordcount(file_path):
-    contents = ""
-
-    with open(file_path) as f:
-        contents = f.read()
-        
-    list_content = contents.split()
-    num_of_words = len(list_content)
-    print("Found " + str(num_of_words) + " total words")
+def get_word_count(text):
+    words = text.split()
+    return len(words)
+   
 
 def count_characters(string):
     lower_string = string.lower()
